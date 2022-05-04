@@ -1,0 +1,237 @@
+body{
+  font-family: Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #2a2a2a;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.7;
+}
+
+.header-img {
+  background-image: url(mainvisual.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 80px;
+}
+.header-logo{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+#special {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sp-h2{
+  font-size: 1.5rem;
+}
+.sp-p {
+  font-size: 14px;
+  margin: 20px 0 40px 0;
+}
+.sp-box{
+  width: 49%;
+  position: relative;
+}
+
+.sp-box img{
+  max-width: 100%;
+}
+.sp-text{
+  background-color:rgba(0,0,0,0.5);
+  width: 290px;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-weight: bold;
+}
+.sp-box-h{
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.sp-box-p{
+  font-size: 14px;
+}
+
+#fashion{
+  height: 520px;
+  background-image: url(fashion.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#fashion h2{
+  padding: 60px 0 20px 0;
+}
+#fashion p{
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+#fashion a{
+  border: 1px solid #000;
+  padding: 14px 36px;
+  font-size: 12px;
+  color: #2a2a2a;
+}
+
+#catalog{
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+#catalog .flex-box{
+  align-items: center;
+}
+.cata-img{
+  width: 48%;
+  text-align: center;
+}
+.cata-img img{
+  max-width: 100%;
+}
+.cata-text{
+  width: 48%;
+  text-align: center;
+}
+.cata-h3{
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.cata-p{
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.cata-p:last-child{
+  margin-bottom: 0;
+}
+
+.cata-a{
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 14px 36px;
+  font-size: 12px;
+  color: #2a2a2a;
+  margin-top: 30px;
+}
+
+footer{
+  background-color: #333333;
+  color: #ffffff;
+}
+footer .flex-box{
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+.bl-a{
+  width: 33%;
+  padding: 60px 0;
+}
+.bl-list{
+  width: 33%;
+}
+.bl-text{
+  width: 33%;
+}
+footer h3{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+footer ul{
+  list-style: none;
+  line-height: 2;
+}
+
+footer ul li{
+  font-size: 12px;
+}
+footer ul li::before{
+  content: "-";
+  padding-right: 4px;
+}
+.bl-p{
+  line-height: 2;
+}
+
+footer p{
+  font-size: 12px;
+}
+
+
+.copy{
+text-align: center;
+padding: 30px 0;
+font-size: 12px;
+color: #000;
+background-color: #fff;
+}
+
+
+@media screen and (max-width:896px) {
+  .flex-box{
+    flex-direction:column ;
+  }
+  .sp-box{
+    width: 100%;
+  }
+  .sp-box:first-child{
+    margin-bottom: 30px;
+  }
+  #fashion h2{
+    padding: 34px 0 20px 0;
+  }
+  .cata-img{
+    width: 100%;
+  }
+  .cata-text{
+    width: 100%;
+  }
+  #catalog{
+    padding: 30px 0;
+  }
+  .cata-img:first-child{
+    margin-bottom: 60px;
+  }
+  .cata-img:last-child{
+    margin-top: 60px;
+  }
+  footer .flex-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .bl-a{
+    width: 100%;
+    text-align: center;
+    padding: 0 0 40px 0;
+  }
+  .bl-text{
+    width: 100%;
+    padding: 30px 0;
+  }
+  .bl-list{
+    width: 100%;
+  }
+}

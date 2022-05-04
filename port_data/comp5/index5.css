@@ -1,0 +1,342 @@
+body{
+  font-family: "Noto Serif JP", serif;;
+  background-color: #e6e2d7;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+img{
+  max-width: 100%;
+}
+
+header{
+  background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-pc.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  margin-bottom: 180px;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top{
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 60px;
+  right: 76px;
+
+}
+.header-top img{
+  width: 40px;
+  line-height: 1;
+}
+.header-nav{
+  margin-right: 60px;
+}
+.header-nav li{
+  margin-left: 24px;
+}
+
+.header-bottom{
+  writing-mode: vertical-rl;
+  background:rgba(255,255,255,0.2);
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+  padding: 8px;
+}
+.header-bottom a{
+  display: block;
+  border: 1px solid #ffffff;
+  padding: 30px 18px;
+}
+
+.site-tit{
+  writing-mode: vertical-rl;
+  font-weight: normal;
+  line-height: 1;
+}
+.site-tit h2{
+  font-weight: normal;
+}
+
+#news .site-tit .en{
+  display: block;
+  font-size: .875rem;
+  margin-left: 15px;
+}
+
+#news .site-tit .ja{
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: .1em;
+}
+
+#news{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 180px;
+}
+#news dl{
+  writing-mode: vertical-rl;
+  margin-top: 80px;
+  margin-right: 100px;
+}
+#news dd{
+  font-size: 12px;
+  padding: 20px 30px 20px 5px;
+  border-right: 1px solid #000;
+
+}
+#news dt{
+  padding: 20px 0 20px 30px;
+}
+#news dt:last-child{
+  border-left: 1px solid #000;
+}
+
+#create{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 180px;
+}
+#create h2{
+  margin-left: 20px;
+
+}
+#create .site-tit .en{
+  font-size: .875rem;
+}
+#create .site-tit .ja{
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: .1em;
+  margin-bottom: 18px;
+}
+
+#create .sec-img{
+  position: relative;
+  width: 65%;
+  margin-top: 100px;
+} 
+#create .sec-text{
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: 56%;
+  padding: 50px 0;
+  background-color: rgba(249,233,6,0.6 );
+  color: #fff;
+  text-align: center;
+}
+
+#science{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 180px;
+}
+#science h2{
+  margin-right: 20px;
+}
+#science .site-tit .en{
+  font-size: 14px;
+}
+#science .site-tit .ja{
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+#science .sec-img{
+  position: relative;
+  width: 65%;
+  margin-top: 100px;
+} 
+.sec-img img{
+  width: 100%;
+
+}
+#science .sec-text{
+  width: 56%;
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  padding: 50px 0;
+  background-color: rgba(149,42,38,0.6 );
+  color: #fff;
+  text-align: center;
+}
+
+#map iframe{
+  width: 100%;
+  vertical-align: baseline;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  padding: 80px 80px 30px 30px;
+}
+.footer-inner{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.footer-top{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer-top img{
+  width: 40px;
+  margin-left: 60px;
+}
+.footer-top dl{
+  writing-mode: vertical-rl;
+  display: flex;
+  font-size: 14.5px;
+  margin-left: 10px;
+  letter-spacing: 2;
+}
+.dl-1 dd{
+  margin-bottom: 10px;
+}
+.footer-top ul{
+  writing-mode: vertical-rl;
+  list-style: none;
+  margin-right: 50px;
+}
+.footer-top ul li{
+  margin-left: 20px;
+}
+
+.footer-bottom{
+  writing-mode: vertical-rl;
+}
+.footer-bottom a{
+  font-size: 14px;
+}
+
+footer small{
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+@media screen and  (max-width:768px){
+  .container{
+    max-width: 100%;
+  }
+  
+  header{
+    background-image: url(https://code-step.com/demo/html/store3/img/mainvisual-sp.jpg);
+    margin-bottom: 80px;
+  }
+  .header-top{
+    top: 20px;
+    right: 16px;
+  }
+  .header-bottom{
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  #news{
+    margin-bottom: 80px;
+  }  
+  #news .site-tit .ja{
+    font-size: 1.8rem;
+  }
+  #news dl{
+    margin: 20px 30px 0 0;
+  }
+  #news dd{
+    padding-right: 12px;
+  }
+  #news dt{
+    padding-left: 12px;
+  }
+  #news dl dt:nth-of-type(3){
+    border-left: 1px solid #000000;
+  }
+  #news dl dd:nth-of-type(n + 4){
+    display: none;
+  }
+  #news dl dt:nth-of-type(n + 4){
+    display: none;
+  }
+
+  #create{
+    margin-bottom: 100px;
+  }
+  #create h2{
+    margin-left: 10px;
+  }
+  #create .site-tit .ja{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  #create .site-tit .en{
+    display: none;
+  }
+  #create .sec-img{
+    margin-top: 80px;
+    width: 90%;
+  } 
+  #create .sec-text{
+    width: 64%;
+    padding: 30px 0;
+    font-size: 0.875rem;
+  }
+  
+  #science{
+    margin-bottom: 100px;
+  }
+  #science h2{
+    margin-right: 10px;
+  }
+  #science .site-tit .ja{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  #science .site-tit .en{
+    display: none;
+  }
+  #science .sec-img{
+    margin-top: 80px;
+    width: 90%;
+  } 
+  #science .sec-text{
+    width: 64%;
+    padding: 30px 0;
+    font-size: 0.875rem;
+  }
+
+  footer{
+    padding: 30px 20px 30px 20px;
+  }
+  .footer-top img{
+    margin-left: 30px;
+  }
+  .footer-top dl{
+    font-size: 0.875rem;
+    margin-left: 6px;
+  }
+  .footer-top ul{
+    margin-right: 20px;
+    font-size: 0.875rem;
+  }
+  .footer-top ul li{
+    margin-left: 10px;
+  }
+}
